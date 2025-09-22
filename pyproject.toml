@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pantheon"
+version = "0.0.1"
+description = "Estrategia de investimento do grupo Pantheon no Desafio Quant Itau de 2025"
+authors = [
+  { name = "Andre Pennini" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.12.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["pantheon"]
+include = ["pyproject.toml", "pantheon/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["pantheon"]
+force-sort-within-sections = true
+
