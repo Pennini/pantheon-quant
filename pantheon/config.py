@@ -21,6 +21,12 @@ MODELS_DIR = PROJ_ROOT / "models"
 REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 
+TICKERS = [
+    "BBAS3.SA", "ITUB4.SA", "BBDC4.SA", "B3SA3.SA", "BPAC11.SA",
+    "PETR4.SA", "PRIO3.SA", "ELET3.SA", "ENEV3.SA", "EQTL3.SA",
+    "VALE3.SA", "ABEV3.SA", "EMBR3.SA", "CSAN3.SA", "WEGE3.SA"
+]
+
 # If tqdm is installed, configure loguru with tqdm.write
 # https://github.com/Delgan/loguru/issues/135
 try:
