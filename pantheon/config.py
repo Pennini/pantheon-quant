@@ -27,6 +27,9 @@ TICKERS = [
     "VALE3.SA", "ABEV3.SA", "EMBR3.SA", "CSAN3.SA", "WEGE3.SA"
 ]
 
+START_DATE = "2015-10-05"
+END_DATE = "2025-10-05"
+
 # If tqdm is installed, configure loguru with tqdm.write
 # https://github.com/Delgan/loguru/issues/135
 try:
