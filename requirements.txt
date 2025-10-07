@@ -11,4 +11,5 @@ ruff
 scikit-learn
 tqdm
 typer
+yfinance
 -e .
